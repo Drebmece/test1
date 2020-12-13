@@ -3,9 +3,9 @@
 
     $con = connection();
 
-    $sql = "select * from student_list";
-    $students = $con->query($sql) or die($con->error);
-    $row = $students->fetch_assoc();
+    $sql = "select * from home_address";
+    $add = $con->query($sql) or die($con->error);
+    $row = $add->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,10 +26,10 @@
         <tbody>
             <?php do{ ?>
             <tr>
-                <td><?php echo $row['first_name'];?></td>
-                <td><?php echo $row['last_name'];?></td>
+                <td><?php echo $row['yuubin_bangou'];?></td>
+                <td><?php echo $row['eki'];?></td>
             </tr>
-            <?php }while($row=$students->fetch_assoc());?>
+            <?php }while($row=$add->fetch_assoc());?>
         </tbody>
             
     </table>
