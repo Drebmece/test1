@@ -19,7 +19,7 @@
     <table>
         <thead>
             <tr>
-                <th>first names</th>
+                <th>yuubin bangou</th>
                 <th>last name</th>
             </tr>
         </thead>
