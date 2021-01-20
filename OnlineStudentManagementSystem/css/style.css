@@ -133,3 +133,15 @@ ul #nested4{
   height: 100vh;
   transition: 0.3s;
 }
+
+.wrapper.collapse .main-container{
+    width: calc(100% - 70px);
+    margin-left: 70px;
+  }
+  
+  .wrapper .main-container .card{
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
