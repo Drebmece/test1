@@ -55,39 +55,52 @@
     
 </head>
 <body>
+
+        <div class="wrapper">
         <input type="radio" name="same" id="r1">
         <input type="radio" name="same" id="r2">
-        <div class="container">
-            <label for="r1" class="fas fa-bars" id="bars"></label>
-            <label for="r2" class="fas fa-times" id="times"></label>
-            <div class="outer">
-                <div class="logo"><img src="img/<?php echo $row['profile']?>" alt=""></div>
-                <div class="myName"><?php echo $row['last_name']?></div>
-                <div class="myName"><?php echo $row['first_name']?></div>
+            <div class="container">
+                <label for="r1" class="fas fa-bars" id="bars"></label>
+                <label for="r2" class="fas fa-times" id="times"></label>
+                <div class="outer">
+                    <div class="logo"><img src="img/<?php echo $row['profile']?>" alt=""></div>
+                    <div class="myName"><?php echo $row['last_name']?></div>
+                    <div class="myName"><?php echo $row['first_name']?></div>
+                </div>
+
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+
+                    <li id="toggle1"><a href="#">Category<span class="fas fa-caret-down" id="arrow1"></span></a></li>
+                        <li id="nested1"><a href="#">HTML Tutorials</a></li>
+                        <li id="nested2"><a href="#">CSS Tutorials</a></li>
+
+                    <li id="toggle2"><a href="#">Features<span class="fas fa-caret-down" id="arrow2"></span></a></li>
+                        <li id="nested3"><a href="#">Updates</a></li>
+                        <li id="nested4"><a href="#">Older ver.</a></li>
+
+
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">learn More</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
             </div>
 
-            <ul>
-                <li><a href="#">Dashboard</a></li>
+            <div class="main-container">
+                <div class="card">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                <div class="card">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                <div class="card">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+            </div>
 
-                <li id="toggle1"><a href="#">Category<span class="fas fa-caret-down" id="arrow1"></span></a></li>
-                    <li id="nested1"><a href="#">HTML Tutorials</a></li>
-                    <li id="nested2"><a href="#">CSS Tutorials</a></li>
-
-                <li id="toggle2"><a href="#">Features<span class="fas fa-caret-down" id="arrow2"></span></a></li>
-                    <li id="nested3"><a href="#">Updates</a></li>
-                    <li id="nested4"><a href="#">Older ver.</a></li>
-
-
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">learn More</a></li>
-                <li><a href="#">Feedback</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
         </div>
-
-       
-
-    <script type="text/javascript">
+        <script type="text/javascript">
         let toggle1 = document.querySelector("#toggle1");
         let toggle2 = document.querySelector("#toggle2");
         let nested1 = document.querySelector("#nested1");
@@ -128,8 +141,8 @@
                 arrow2.style.textShadow = "0 0 5px #12fff1";
             }
         });
-    
-    </script>
 
+
+    </script>
 </body>
 </html>
