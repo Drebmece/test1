@@ -143,6 +143,27 @@
         });
 
 
+        $(document).ready(function(){
+            $("#bars").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });     
+        $(document).ready(function(){
+            $("#times").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });     
+        $(document).ready(function(){
+            $("#r1").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });    
+        $(document).ready(function(){
+            $("#r2").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });      
+    
     </script>
 </body>
 </html>
