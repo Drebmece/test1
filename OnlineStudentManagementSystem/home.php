@@ -64,8 +64,23 @@
                 <label for="r2" class="fas fa-times" id="times"></label>
                 <div class="outer">
                     <div class="logo"><img src="img/<?php echo $row['profile']?>" alt=""></div>
-                    <div class="myName"><?php echo $row['last_name']?></div>
-                    <div class="myName"><?php echo $row['first_name']?></div>
+                    <div class="myName">
+                    <?php 
+                        if($access == 0){
+                            echo "Admin";
+                        }else{
+                            echo $row['first_name'];
+                        }
+                    ?>
+                    </div>
+                    <div class="myName">
+                    <?php 
+                    if($access != 0){
+                        echo $row['last_name'];
+                    }
+                    ?>
+                    
+                    </div>
                 </div>
 
                 <ul>
