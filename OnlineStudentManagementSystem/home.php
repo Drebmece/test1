@@ -16,7 +16,7 @@
     $sqlId;
     switch($access){
         case 0:
-            "mada";
+            $sqlId = "select * from user where id='$id'";
             break;
 
         case 1:
@@ -63,7 +63,8 @@
                 <label for="r1" class="fas fa-bars" id="bars"></label>
                 <label for="r2" class="fas fa-times" id="times"></label>
                 <div class="outer">
-                    <div class="logo"><img src="img/<?php echo $row['profile']?>" alt=""></div>
+                    <div class="logo"><img src="img/<?php echo($access == 0 ? "0admin.jpg" :  $row['profile']);?>" alt=""></div>
+                    
                     <div class="myName">
                     <?php 
                         if($access == 0){
