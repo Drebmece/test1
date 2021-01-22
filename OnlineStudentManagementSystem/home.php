@@ -2,6 +2,8 @@
     if(!isset($_SESSION)){
         session_start();
     }
+    require_once("CheckSession.php");
+    
     include_once("connection/connection.php");
     $con = connection();
 
@@ -49,7 +51,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css" <?php echo date('l jS \of F Y h:i:s A'); ?>/>
+    <link rel="stylesheet" type="text/css" href="style.css?" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     
     
@@ -100,6 +103,9 @@
                     <li><a href="#">learn More</a></li>
                     <li><a href="#">Feedback</a></li>
                     <li><a href="#">About</a></li>
+                </ul>
+                <ul class="logout">
+                    <li><a href="LogOut.php">Log Out</a></li>
                 </ul>
             </div>
 
