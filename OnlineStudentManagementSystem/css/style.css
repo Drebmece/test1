@@ -74,7 +74,8 @@ ul li a{
   padding-left: 20px;
 }
 
-ul li a:focus{
+ul li a:focus,
+ul li .activeLink{
   background: black;
   border-left: 4px solid #00fcff;
 }

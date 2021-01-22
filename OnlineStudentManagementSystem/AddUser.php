@@ -51,8 +51,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css" <?php echo date('l jS \of F Y h:i:s A'); ?>/>
-    <link rel="stylesheet" type="text/css" href="css/style.css?" />
+    <link rel="stylesheet" href="./css/style.css" <?php echo date('l jS \of F Y h:i:s A'); ?>/>
+    <link rel="stylesheet" type="text/css" href="style.css?" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     
     
@@ -91,7 +91,7 @@
                     <?php
                         if($access == 0){
                     ?>
-                        <li><a href="AddUser.php">ユーザーを追加</a></li>
+                        <li><a class="activeLink" href="#">ユーザーを追加</a></li>
                     <?php
                         };
                     ?>
@@ -117,17 +117,18 @@
             </div>
 
             <div class="main-container">
-                <div class="card">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="card">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="card">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>ユーザー</th>
+                        <th>パスワード</th>
+                        <th>アクセスタイプ</th>
+                        <th>名前</th>
+                        <th>アクティブ化/非アクティブ</th>
+                    </tr>
+
+                </table>
             </div>
-            
 
         </div>
         <script type="text/javascript">
