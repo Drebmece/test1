@@ -2,6 +2,9 @@
     if(!isset($_SESSION)){
         session_start();
     }
+    if(isset($_SESSION['user'])){
+        header("location:home.php");
+    }
     include_once("connection/connection.php");
     $con = connection();
 

@@ -88,6 +88,13 @@
                 </div>
 
                 <ul>
+                    <?php
+                        if($access == 0){
+                    ?>
+                        <li><a href="#">アドミンを追加</a></li>
+                    <?php
+                        };
+                    ?>
                     <li><a href="#">Dashboard</a></li>
 
                     <li id="toggle1"><a href="#">Category<span class="fas fa-caret-down" id="arrow1"></span></a></li>
